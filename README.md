@@ -11,20 +11,19 @@ Performed end-to-end analysis using SQL for querying and Power BI for visualizat
 The dataset contains transactional data from an online retail store, where each row represents a product purchased as part of an invoice.
 
 # Key Columns
-InvoiceNo – Unique transaction identifier
-InvoiceDate – Date and time of purchase
-CustomerID – Unique customer identifier
-Description – Product description
-Quantity – Number of units purchased
-UnitPrice – Price per unit
-Country – Customer’s country
+1.InvoiceNo – Unique transaction identifier
+2.InvoiceDate – Date and time of purchase
+3.CustomerID – Unique customer identifier
+4.Description – Product description
+5.Quantity – Number of units purchased
+6.UnitPrice – Price per unit
+7.Country – Customer’s country
 
 # Tools & Technologies Used
-
--Python (Pandas)
--SQLite for querying and analysis
--Power BI for interactive dashboards
--Jupyter Notebook for documentation and analysis
+*Python (Pandas)
+*SQLite for querying and analysis
+*Power BI for interactive dashboards
+*Jupyter Notebook for documentation and analysis
 
 # Key Steps
 
@@ -38,29 +37,26 @@ Country – Customer’s country
 # Data Cleaning & Preprocessing
 
 The following steps were performed to ensure data accuracy and reliability:
--Removed rows with missing CustomerID
--Removed records with:
--Negative or zero Quantity
--Zero or negative UnitPrice
--Converted InvoiceDate to datetime format
+*Removed rows with missing CustomerID
+*Removed records with:
+*Negative or zero Quantity
+*Zero or negative UnitPrice
+*Converted InvoiceDate to datetime format
 
--Created a new Revenue column
+*Created a new Revenue column
 (Revenue = Quantity × UnitPrice)
 
--Extracted time-based features:
---Year
---Month
---Month Name
---Day of Week
+*Extracted time-based features:
+Year,Month,Month Name,Day of Week
 
 
 # Exploratory Data Analysis (EDA)
--Key analyses performed include:
--Monthly revenue trends to identify seasonality
--Revenue distribution by country
--Top-selling and top revenue-generating products
--Customer-level revenue contribution
--Weekday vs weekend sales analysis
+*Key analyses performed include:
+*Monthly revenue trends to identify seasonality
+*Revenue distribution by country
+*Top-selling and top revenue-generating products
+*Customer-level revenue contribution
+*Weekday vs weekend sales analysis
 
 
 # Key Insights
@@ -72,19 +68,11 @@ The following steps were performed to ensure data accuracy and reliability:
 
 # Dashboard (Power BI)
 An interactive Power BI dashboard was created to visualize:
--Total Revenue, Orders, Customers, and AOV
--Monthly revenue trends
--Top products and top customers
--Country-wise revenue distribution
--Weekly sales performance
-
-# Business Value
-This analysis helps stakeholders:
-Identify high-value customers,
-Optimize inventory planning,
-Understand seasonal demand patterns,
-Improve pricing and promotional strategies,
-Make data-driven marketing decisions.
+*Total Revenue, Orders, Customers, and AOV ,
+*Monthly revenue trends
+*Top products and top customers
+*Country-wise revenue distribution
+*Weekly sales performance
 
 # Conclusion
 This project demonstrates a complete data analytics pipeline from raw data cleaning to insights and visualization—using real-world e-commerce data. 
